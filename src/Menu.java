@@ -26,14 +26,12 @@ public class Menu {
     }
 
     String conversion(){   //真偽の変換
-        if (getTakeout()){
-            return "〇";
-        }else{
-            return "☓";
-        }
+       String result;
+        result=getTakeout()?"〇":"☓";
+        return result;
     }
 
-    void printDate(){
+    void printData(){
         System.out.println(name+"     "+price+"   "+count+"      "+conversion()+"       "+getTotalPrice());
     }
 

@@ -7,9 +7,9 @@ public class Main {
 
 
         Menu.printTitle();
-        coffee.printDate();
-        kohler.printDate();
-        steak.printDate();
+        coffee.printData();
+        kohler.printData();
+        steak.printData();
 
         int sum= coffee.getTotalPrice()+ kohler.getTotalPrice()+ steak.getTotalPrice();
         System.out.println("合計金額"+sum+"円");
