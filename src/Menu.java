@@ -5,11 +5,11 @@ public class Menu {
     private final int count;        //数量
     private final boolean takeout;  //テイクアウトできるかの真偽
 
-    public Menu(String name,int price,int count,boolean takeout) {   //コンストラクタ
-        this.name=name;
-        this.price=price;
-        this.count=count;
-        this.takeout=takeout;
+    public Menu(String name, int price, int count, boolean takeout) {   //コンストラクタ
+        this.name = name;
+        this.price = price;
+        this.count = count;
+        this.takeout = takeout;
     }
 
 
@@ -17,25 +17,23 @@ public class Menu {
         return takeout;
     }
 
-    public int getTotalPrice(){   //合計金額
-        return count*price;
+    public int getTotalPrice() {   //合計金額
+        return count * price;
     }
 
-    static void printTitle(){
+    static void printTitle() {
         System.out.println("商品名      単価  数量  テイクアウト  金額");
     }
 
-    String conversion(){   //真偽の変換
-       String result;
-        result=getTakeout()?"〇":"☓";
+    String conversion() {   //真偽の変換
+        String result;
+        result = getTakeout() ? "〇" : "☓";
         return result;
     }
 
-    void printData(){
-        System.out.println(name+"     "+price+"   "+count+"      "+conversion()+"       "+getTotalPrice());
+    void printData() {
+        System.out.println(name + "     " + price + "   " + count + "      " + conversion() + "       " + getTotalPrice());
     }
-
-
 
 
 }
